@@ -1,0 +1,6 @@
+temps =[20, -999, 25,-999, 18]
+
+for i in temps:
+    if i == -999:
+        continue
+    print(i)

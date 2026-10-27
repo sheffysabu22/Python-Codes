@@ -1,0 +1,14 @@
+grade = float(input("Grade /50 : "))
+
+if grade < 0 or grade > 50:
+    print("Invalid grade")
+elif grade >= 40:
+    print("very good")
+elif grade >= 30:
+    print("good")
+elif grade >= 20:  
+    print("Average")
+elif grade >= 10: 
+    print("Pass")
+else:
+    print("Fail")

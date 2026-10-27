@@ -1,0 +1,5 @@
+for i in range(10,50):
+    if i % 6 == 0:
+        print("First multiple of 6:",i)
+        break
+    print("search over")
