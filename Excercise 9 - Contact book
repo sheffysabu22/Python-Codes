@@ -1,0 +1,14 @@
+contacts ={"Malu": ["99 78 69 54 20", "malu@gmail.com"]}
+
+Name = input("Name :")
+Phone = input("phone number :")
+email = input("gmail.com :")
+contacts[Name] = [Phone , email]
+
+search = input("search :")
+if search in contacts :
+    Phone , email = contacts[search]
+    print(f"{search} : {Phone} , {email}")
+else :   
+    print("Contact not found")
+print(len(contacts), "contacts ")    

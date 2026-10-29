@@ -1,0 +1,9 @@
+fruits = ["apple", "banana", "apple", "orange", "banana", "apple"]
+
+counts = {}
+
+for fruit in fruits:
+    counts[fruit] = counts.get(fruit, 0) + 1
+
+for fruit, n in counts.items():
+    print(fruit, n)

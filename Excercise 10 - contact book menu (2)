@@ -1,0 +1,24 @@
+students = {}
+
+while True:
+    choice = input("1 Add, 2 Search, 3 List, 0 Quit: ")
+
+    if choice == "1":
+        name = input("Student Name: ")
+        grade = input("Grade: ")
+
+        if name not in students:
+            students[name] = []
+
+        students[name].append(grade)
+
+    elif choice == "2":
+        name = input("Student Name: ")
+        print(students.get(name, "Not found"))
+
+    elif choice == "3":
+        for name in sorted(students):
+            print(f"{name:<10}", ", ".join(students[name]))
+
+    elif choice == "0":
+        break

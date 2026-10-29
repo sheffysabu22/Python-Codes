@@ -1,0 +1,15 @@
+fruits = ["apple", "banana", "apple", "orange", "banana", "apple"]
+
+counts = {}
+
+for fruit in fruits:
+    counts[fruit] = counts.get(fruit, 0) + 1
+
+with open("report.txt", "w") as out:
+    out.write(f"Total Fruits: {len(fruits)}\n")
+    out.write(f"Unique Fruits: {len(counts)}\n\n")
+
+    for fruit in sorted(counts):
+        out.write(f"{fruit:<10}{counts[fruit]}\n")
+
+print("Report saved")

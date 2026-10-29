@@ -1,0 +1,10 @@
+scores = [45, 60, 30, 80]
+
+passed = []
+
+for s in scores:
+    if s >= 50:
+        passed.append(s)
+
+print(passed)
+

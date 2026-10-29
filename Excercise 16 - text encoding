@@ -1,0 +1,5 @@
+with open("names.txt", "w", encoding="utf-8") as f:
+    f.write("José, André")
+
+with open("names.txt", encoding="utf-8") as f:
+    print(f.read())
